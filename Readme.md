@@ -29,7 +29,7 @@ GeneratorServiceEntity.generateAllCode 会生dao层的相关代码
 
 ### 自定义banner
 
-[自定义banner传送门](http://patorjk.com/software/taag/#p=display&f=Soft&t=thenone.example)
+[自定义banner传送门](http://patorjk.com/software/taag/#p=display&f=Soft&t=catface996.mysql)
 
 建议使用Soft字体,将生成的内容复制到banner.txt即可,文件路径 app/src/main/resources/banner.txt
 

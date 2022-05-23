@@ -26,11 +26,11 @@ public class Swagger2Config {
 	@Bean
 	public Docket createRestWebApi() {
 		return new Docket(DocumentationType.SWAGGER_2)
-						.groupName("web.theone.example")
+						.groupName("web.catface996.mysql")
 						.apiInfo(apiInfo())
 						.select()
 						// 扫描的包所在位置
-						.apis(RequestHandlerSelectors.basePackage("com.catface996.example.http.web"))
+						.apis(RequestHandlerSelectors.basePackage("com.catface996.mysql.http.web"))
 						// 扫描的 URL 规则
 						.paths(PathSelectors.any())
 						.build();
@@ -39,11 +39,11 @@ public class Swagger2Config {
 	@Bean
 	public Docket createRestRpcApi() {
 		return new Docket(DocumentationType.SWAGGER_2)
-						.groupName("rpc.theone.example")
+						.groupName("rpc.catface996.mysql")
 						.apiInfo(apiInfo())
 						.select()
 						// 扫描的包所在位置
-						.apis(RequestHandlerSelectors.basePackage("com.catface996.example.http.rpc"))
+						.apis(RequestHandlerSelectors.basePackage("com.catface996.mysql.http.rpc"))
 						// 扫描的 URL 规则
 						.paths(PathSelectors.any())
 						.build();
@@ -53,9 +53,9 @@ public class Swagger2Config {
 		// 联系信息
 		return new ApiInfoBuilder()
 						// 大标题
-						.title("唯一艺术")
+						.title("catface996")
 						// 描述
-						.description("唯一艺术")
+						.description("catface996")
 						// 版本
 						.version("0.0.1-SNAPSHOT")
 						.build();
