@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.catface996.mysql.repository.mapper.TestMapper">
+
+  <!-- 通用查询结果列 -->
+  <select id="selectByUserName" resultType="com.catface996.mysql.repository.entity.Test">
+    select
+    <include refid="Base_Column_List"/>
+    from test where user_name = #{userName}
+  </select>
+
+  <!-- 根据用户名称查询 -->
+  <sql id="Base_Column_List">
+        id, user_name, age, created, modified
+    </sql>
+
+</mapper>
